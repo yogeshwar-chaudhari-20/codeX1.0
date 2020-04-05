@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="w3.css">
+	<script src="sweetalert-master/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Code-E-Salsa - An engaging test platform for fun learning</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="css/landing-page.css" rel="stylesheet">
+
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>	
+	body
+	{
+		font-family: 'Montserrat', sans-serif;
+	}
+	.navbar 
+	{
+		background-color : transparent;
+		border : none;
+	}
+	
+	.panel
+	{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		padding-left : 7px;
+		padding-right : 7px;
+		margin-top : 20px;
+		padding-bottom : 20px;
+	}
+
+	.card.container 
+	{
+		padding: 20px 130px;
+	}
+
+	.panel.p 
+	{
+		word-wrap : break-word;
+		display : block;
+	}
+
+	img.card-img-top:hover 
+	{
+		opacity: 0.4;
+		filter: alpha(opacity=50); /* For IE8 and earlier */
+	
+	}
+
+	.navbar-brand
+	{
+		position : absolute;
+		top : 5px;
+		left : 200px;
+		font-size : 25px;
+		color : white;
+	}
+	
+	.btn-default:hover
+	{
+		background-color : #4d4d4d;
+		border-style : solid;
+		border-color : lightgrey;
+		border-width : 1px;
+		color : lightgrey;
+		font-weight : 300;
+		transition:all 0.3s ease-in-out;
+		-moz-transition:all 0.3s ease-in-out;
+		-webkit-transition:all 0.3s ease-in-out;
+	}
+	
+	.navbar-brand-code
+	{
+		color : yellow;
+		letter-spacing : 3px;
+	}
+	
+	/*Scroll Bar*/
+body::-webkit-scrollbar {
+	width: 8px;	
+}
+ 
+body::-webkit-scrollbar-track 
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+}
+ 
+body::-webkit-scrollbar-thumb 
+{
+		background-color: lightgrey;
+		outline: 1px solid slategrey;
+}
+	
+</style>
+</head>
+
+<body id="page-top" class="index">
+    
+	<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">             
+                <a class="navbar-brand"><span class="glyphicon glyphicon-"></span><STRONG><span class='navbar-brand-code'>Code</span>X</STRONG></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-right" style="padding:14px">
+					<li>
+					<form class="form-inline" action='login_signup/login.php' method='POST'>						
+						<div class = "col-md-offset-2 col-md-12 col-pull-" >
+							<div class="col-md-12">
+							<div class = "form-group" >
+								
+									<input name = "femail" type = "email" placeholder="Email-Id" class = "form-control input-sm" required>									
+								
+							</div>	
+							<div class = "form-group">
+								
+									<input name = "password" type = "password" placeholder="Password" class = "form-control input-sm" required>
+									<button class='btn btn-sm btn-default' name='login_button' align="center"> Login <span class="glyphicon glyphicon-log-in"></span></button> 							
+
+							</div>	
+							</div>							
+							<div class = "form-group col-md-offset- col-md-4">
+									<!input name = "admin_check" type="checkbox" value="Admin Login">
+									<!--label><font size="1" face="" color="white"> Admin </font></label-->
+							</div>
+						</div>	
+					</form>		
+					</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+
+	<div class="row" style="background:url('wall/7.jpg');min-height:500px;">		
+		<div class="col-md-12 form-group text-center">
+			
+			<BR><BR><BR><BR><BR><BR><BR><BR><h1 align='center' style="color:white;font-weight:300;line-height:125%;font-size:60px;">Think. Code. Debug.</h1>
+			<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-default col-md-offset-5 col-md-2" name="signup">S I G N - U P  <span class="glyphicon glyphicon-"></span></button>
+			<br><br><br><br>
+		</div>	
+	</div>
+
+	<BR><BR>
+	<BR>
+
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-4'>
+				<div class='card text-center'> 
+					<img class='card-img-top' src='source.jpg' width='150px' height='150px' alt='Card image cap'>
+					<div class='card-block'>
+					<h4 class='card-title' align='center'><BR>Debug. Compile. Execute.</h4>
+					<p class='card-text'>With the integrated compilar functionality, you will be able to debug, compile and execute the program in same enviroment.</p>
+					</div>		
+				</div>
+			</div>
+			
+			<div class='col-md-4'>
+			<div class='card text-center'> 
+					<img class='card-img-top' src='userfirst.jpg' width='200px' height='150px' alt='Card image cap'>
+					<div class='card-block'>
+					<h4 class='card-title' align='center'><BR>System works for you.</h4>
+					<p class='card-text'>The algorithm at the codeX has been designed to optimize with your skills. The aim is to encourage you to take new leap in era of programming.</p>
+					</div>		
+				</div>
+			</div>
+
+			<div class='col-md-4'>
+				<div class='card text-center'> 
+					<img class='card-img-top' src='cpp.png' width='180px' height='150px' alt='Card image cap'>
+					<div class='card-block'>
+					<h4 class='card-title' align='center'><BR>Keep Calm And Code</h4>
+					<p class='card-text'>When you get enough coding skills start from the scratch and live the unique feeling like every other programmer do.</p>
+					</div>		
+				</div>
+			</div>
+
+		</div>
+	</div>
+<BR>	
+
+
+	<div class="w3-container">
+		<div id="id01" class="w3-modal">
+			<div class="w3-modal-content w3-animate-zoom w3-card-24 ">
+			
+			  <header class="w3-container "> 
+				<span onclick="window.location.href='index.html'" class="w3-closebtn">&times;</span>
+				<br>
+				<h2 class="text-center"><b>S I G N - U P</b></h2>
+			  </header>
+			  
+			  <div class="w3-container" style="background-color:#4d4d4d;color:white;">
+				<br><br>
+				<div class="tab-pane" id="Registration">
+					<form role="form" class="form-horizontal text-center" action="login_signup/signup.php" method="POST">
+						<div class="form-group">
+							<label for="name" class="col-sm-2 control-label">Name</label>
+							<div class="col-sm-4">
+									<input type="text" class="form-control" id="fname" placeholder="Participant 1" name="fname" value='' required>
+							</div>
+							<div class="col-sm-4">
+									<input type="text" class="form-control" id="sname" placeholder="Participant 2" name="sname" >
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-sm-2 control-label" >Email</label>
+							<div class="col-sm-4">
+								<input type="email" class="form-control" id="femail" placeholder="Participant 1" name="femail" required/>
+							</div>
+							<div class="col-sm-4">
+								<input type="email" class="form-control" id="semail" placeholder="Participant 2" name="semail" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="mobile" class="col-sm-2 control-label">Mobile</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="phone1" placeholder="Participant 1" name="phone1" required/>
+							</div>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="phone2" placeholder="Participant 2" name="phone2"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="password" class="col-sm-2 control-label">Password</label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control" id="password" placeholder="Password" name="password" required/>
+							</div>
+						</div>	
+						<div class="form-group">
+							<label for="password" class="col-sm-2 control-label">Confirm Password</label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control" id="password2" placeholder="Password" name="password2" required/>
+							</div>
+						</div>
+						
+						<p id="p" style="color:red;"> </p>
+						
+						<div class="row">
+							<div class="col-sm-offset-4 col-sm-4">
+								<button type="submit" class="btn btn-default btn-lg" name="signup" onClick=" return myFunction()" > S I G N - U P </button>
+								
+								<div class="row ">
+									<br>	
+									<!-- <button type="submit" class="btn btn-danger btn-md" onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-remove"></span>Cancel </button>
+									<!--button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button-->
+								</div>								
+							</div>
+						</div>
+					</form>
+					<br>
+				</div>
+			  </div>
+			</div>
+	  </div>
+</div>
+
+ <div class="navbar navbar-bottom">
+ <BR>
+		<p class="copyright text-muted small text-center">CodeX@TechTonic SKNCOE 2017<BR>An engaging test platform developed with passion</p>		
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+		window.location.href="index.html";
+    }
+}
+
+function myFunction() {
+    var x, y, fn, p1, p2, text;
+	
+	var letters = /^[A-Za-z ]+$/;  
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+	x = document.getElementById("phone1").value;
+	y = document.getElementById("phone2").value;
+	fn = document.getElementById("fname").value;
+		
+	p1 = document.getElementById("password").value;
+	p2 = document.getElementById("password2").value;
+	var passid_len = p1.length;  
+	var passid_len2 = p2.length;  
+
+	document.getElementById("p").innerHTML = "";	
+	
+	if(!(fn.match(letters)) || fn.length < 3) 
+	{
+		var para = document.createElement("P");	
+		text = document.createTextNode("Username must have alphabets only & minimum 3 in length");
+		para.appendChild(text);
+		document.getElementById("p").appendChild(para);
+		return false;
+	}
+		
+	if(!(document.getElementById("femail").value.match(mailformat)))  
+	{
+		var para = document.createElement("P");	
+		text = document.createTextNode("Invalid Email Address");
+		para.appendChild(text);
+		document.getElementById("p").appendChild(para);
+		return false;
+	}
+		
+    if (isNaN(x) || isNaN(y) ||  x == "" || x.length != 10 )
+	{
+		var para = document.createElement("P");	
+        text = document.createTextNode("Mobile Number not valid or must have 10 digits");
+		para.appendChild(text);
+		document.getElementById("p").appendChild(para);
+		return false;
+    }
+	
+	if (passid_len == 0 || passid_len >= 15 || passid_len < 5 || p1 != p2)
+	{
+		var para = document.createElement("P");	
+        text = document.createTextNode("Password Dont Match or Password Length Not Between 5 - 15");
+		para.appendChild(text);
+		document.getElementById("p").appendChild(para);	
+		return false;
+	}
+	
+	/*{
+		text = "";
+		//alert("Sign-Up Successful!!");
+		swal({
+			title: "Success!",
+			text: "Sign-Up Successful!",
+			type: "success",
+			confirmButtonText: "OK",
+			//showConfirmButton: false,
+			timer: 4000
+		},
+		function(isConfirm){
+			if (isConfirm) {
+				window.location.href="index.html";
+		}
+		});
+	}	*/
+    //document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

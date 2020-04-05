@@ -1,0 +1,44 @@
+you only need to add id fields in the inputs.
+<button type='button' onclick='call_signup();'></button>
+
+<script>
+function call_signup() 
+{
+	var fname = document.getElementById("fname").value;
+	var sname = document.getElementById("sname").value;
+	var femail = document.getElementById("femail").value;
+    var semail = document.getElementById("semail").value;
+	var fphone = document.getElementById("fphone").value;
+	var sphone = document.getElementById("sphone").value;
+	var password = document.getElementById("password").value;
+	
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("-----").innerHTML = this.responseText; //replace ----- with id of your p tag on your modal where you want to display the success.
+    }
+  };
+  xhttp.open("POST", "login_signup/signup.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("fname="+fname+"&sname="+sname+"&femail="+femail+"&semail="+semail+"&fphone="+fphone+"&sphone="+sphone);
+}
+</script>
+
+make a file signup.php in login_signup folder. 
+
+just follow my login.php file. 
+
+include the misc.inc file
+now dont check if any button is set or not like $_POST['login_button']; we dont need that.
+now get the values of variables using this format -
+
+$fname = $_POST['fname'];		// get all the variables
+
+$add_user = "INSERT INTO 'participants_info'(fname,sname ...) VALUES($fname,$sname....)";
+mysqli_query($connect,$add_user);
+
+define the $return_str = "Successful";
+echo $return_str;     	// this is your responseText.
+
+
+this will be sent to xhttp.responseText;
