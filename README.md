@@ -4,24 +4,38 @@
 # Feature List 
 
 - Dynamic Leaderboard
-
-Every participant can see the leaderboard and see how they are competing with other participant's in real time.
+   Every participant can see the leaderboard and see how they are competing with other participant's in real time.
 
 - Integrated c++ editor for compiling and executing programs
-
-Write code, compile and see the result in the environment itself
+   Write code, compile and see the result in the environment itself
 
 - Smart algorithms that decides the difficulty level based on previous responses in realtime.
-
-The system was mainly designed to boost participant's confidence in computer programming. It motivates an individual by making programming seem easy and doable.
+   The system was mainly designed to boost participant's confidence in computer programming. It motivates an individual by making programming seem easy and doable.
 
 - Support for resuming quiz in case of failure
-
-System takes care of the state management. Pariticipant can resume the test in case he/she runs into any technical problems like Internet connectivity issue, power cut etc.
+   System takes care of the state management. Pariticipant can resume the test in case he/she runs into any technical problems like Internet connectivity issue, power cut etc.
 
 # Achievement
 
- - Over 300 participations
- - Tested over load of 40 concurrent users without any lag. 
+ - Over 600 participations.
+ - Tested over load of 80 concurrent users without any lag which was impressive at that time considering the limited computing power, lack of sophisticated resources and this being my very first attempt of full fledge application development.
  - Gamified the computer programming learning
+
+
+# Images
+* Landing Page
+![Landing page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/1.png)
+
+* What is CodeX
+![Login Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/2.png)
+
+* Competative Test Page
+![Registration Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/3.png)
+
+* Registration Form
+![Forum Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/4.png)
+
+* Demonstrating Defence Mechanism - Confirming logout action
+![User Area Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/5.png)
+
 
