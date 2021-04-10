@@ -25,17 +25,17 @@
 # Images
 
 * Landing Page
-![Landing page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/1.png)
+![](screenshots/1.png)
 
 * What is CodeX
-![What is CodeX](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/2.png)
-
-* Competative Test Page
-![Competative Test Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/3.png)
+![](screenshots/2.png)
 
 * Registration Form
-![Registration Form](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/4.png)
+![](screenshots/4.png)
+
+* Competative Test Page
+![](screenshots/3.png)
 
 * Demonstrating Defence Mechanism - Confirming logout action
-![Logout Confirmation](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/5.png)
+![](screenshots/5.png)
 
