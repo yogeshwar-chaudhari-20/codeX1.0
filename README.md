@@ -27,15 +27,15 @@
 ![Landing page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/1.png)
 
 * What is CodeX
-![Login Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/2.png)
+![What is CodeX](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/2.png)
 
 * Competative Test Page
-![Registration Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/3.png)
+![Competative Test Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/3.png)
 
 * Registration Form
-![Forum Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/4.png)
+![Registration Form](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/4.png)
 
 * Demonstrating Defence Mechanism - Confirming logout action
-![User Area Page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/5.png)
+![Logout Confirmation](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/5.png)
 
 
