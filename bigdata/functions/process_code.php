@@ -24,17 +24,17 @@
 		fclose($fd);
 	}
 	
-	exec('C:\mingw\bin\g++ D:\xampp\htdocs\code_e_salsa\bigdata\\'.$_SESSION['id'].'\sample.cpp -O3 -o D:\xampp\htdocs\code_e_salsa\bigdata\\'.$_SESSION['id'].'\sample.exe 2>D:\xampp\htdocs\code_e_salsa\bigdata\\'.$_SESSION['id'].'\error.txt',$output,$return_status);
+	exec('C:\mingw\bin\g++ D:\xampp\htdocs\codeX1.0\bigdata\\'.$_SESSION['id'].'\sample.cpp -O3 -o D:\xampp\htdocs\codeX1.0\bigdata\\'.$_SESSION['id'].'\sample.exe 2>D:\xampp\htdocs\codeX1.0\bigdata\\'.$_SESSION['id'].'\error.txt',$output,$return_status);
 	if($return_status==0)
 	{
-		$result=shell_exec('D:\xampp\htdocs\code_e_salsa\bigdata\\'.$_SESSION['id'].'\sample.exe');
+		$result=shell_exec('D:\xampp\htdocs\codeX1.0\bigdata\\'.$_SESSION['id'].'\sample.exe');
 		$console_msg = "Successfully Compiled <BR>";
 		$console_msg .= $result;
 		echo $console_msg;
 	}
 	else if($return_status!=0)
 	{
-		//$errors=shell_exec('C:\mingw\bin\g++ D:\xampp\htdocs\code_e_salsa\bigdata\\'.$_SESSION['id'].'\sample.cpp');
+		//$errors=shell_exec('C:\mingw\bin\g++ D:\xampp\htdocs\codeX1.0\bigdata\\'.$_SESSION['id'].'\sample.cpp');
 		$console_msg = "Compilation Failed <BR>";
 		$error_msg = "";
 		try{
