@@ -23,6 +23,7 @@
 
 
 # Images
+
 * Landing Page
 ![Landing page](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/1.png)
 
@@ -37,5 +38,4 @@
 
 * Demonstrating Defence Mechanism - Confirming logout action
 ![Logout Confirmation](https://github.com/yogesh-chaudhari-77/codeX1.0/tree/master/screenshots/5.png)
-
 
