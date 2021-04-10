@@ -7,11 +7,11 @@ $rank = 1;
 $get_ranking = "SELECT `id`, `fname`, `sname`, `score` FROM `participant_info` ORDER BY `score` DESC";
 $result = mysqli_query($connect,$get_ranking);
 
-$display_str = "<h2 align='center'>";
+$display_str = "<h2 align='center' class='text-primary'>";
 $display_str .= "Leaderboard";
 $display_str .= "</h2><BR>";
 
-$display_str .= "<TABLE class='table table-hover'>";
+$display_str .= "<TABLE class='table table-responsive table-hover'>";
 	while($row = mysqli_fetch_array($result))
 	{
 		//extract($row);

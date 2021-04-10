@@ -329,13 +329,13 @@ if($get_question!="")
 					$table_color = 'primary';
 				}
 			}
-		$display_string = "<div class='panel panel-".$table_color."'>";
-		$display_string	.= "<div class='panel-heading'>
-				<h3 align='left'> Question No. ".$_SESSION['question_number']."</h3>
+		$display_string = "<div class='card shadow p-3 mb-5 bg-white rounded'>";
+		$display_string	.= "<div class='card-heading'>
+				<h3 class='card-title'> Question No. ".$_SESSION['question_number']."</h3>
 			</div>
 			
-			<div class='panel-body'>
-				<p><STRONG>".nl2br($cursor['question'])."</STRONG></p><HR>
+			<div class='card-body'>
+				<p><code>".nl2br($cursor['question'])."</code></p><HR>
 			<form action='check_answer.php' method='POST' onsubmit='event.preventDefault(); dynamic_leaderboard(); get_next_question();'>
 				<input type='radio' onchange='enable_button1();' name='option' id='selected_option1' value='A'>"." ".$cursor['option1']."<BR>
 				<input type='radio' onchange='enable_button1();' name='option' id='selected_option2' value='B'>"." ".$cursor['option2']."<BR>
@@ -366,7 +366,6 @@ if($get_question!="")
 	</div>";
 
 		echo $display_string;
-		echo "<div class='container'><div class='row'><div class='panel panel-default'><div class='panel-body' style='border-style:solid;border-color:#337ab7;border-width:1px;'><p>Previous Of Previous Answer = ".$_SESSION['ppa']." / Previous Answer = ".$_SESSION['pa']." / Current Answer = ".$_SESSION['ca']." ".$_SESSION['current_difficulty']."</p></div></div></div></div>";
 	}
 }
 else
